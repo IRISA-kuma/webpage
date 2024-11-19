@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRISA - Services</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            line-height: 1.6;
+            color: #fff;
+            background-color: #0a0a0a;
+        }
+
+        .section {
+            min-height: 100vh;
+            padding: 100px 20px;
+        }
+
+        .section-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 48px;
+            color: #00ff88;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: rgba(26,26,26,0.8);
+            padding: 40px;
+            border-radius: 15px;
+            border: 1px solid rgba(0,255,136,0.1);
+            transition: all 0.4s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            border-color: #00ff88;
+            box-shadow: 0 20px 40px rgba(0,255,136,0.1);
+        }
+
+        .service-card h3 {
+            color: #00ff88;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .service-card p {
+            color: #ffffff;
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .service-link {
+            color: #00ff88;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            transition: transform 0.3s;
+        }
+
+        .service-link:hover {
+            transform: translateX(10px);
+        }
+
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            transition: background 0.3s;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #00ff88;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 40px;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            padding: 8px 16px;
+            border-radius: 3px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #00ff88;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">IRISA</div>
+            <div class="nav-links">
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="services.html">SERVICES</a>
+                <a href="index.html#contact">CONTACT</a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="services" class="section">
+        <div class="section-content">
+            <h2 class="section-title">SERVICES</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>BridgeInspect</h3>
+                    <p>ドローンを活用した革新���な橋梁点検ソリューション。<br>
+                    完全自動で橋全体を撮影し、高精度3Dモデルを作成します。<br>
+                    AIが「ひび割れ」や「さび」を自動でリストアップします。<br>
+                    3DモデルからCADデータを作成し、作業を効率化します。</p>
+                    <a href="download.html" class="service-link">資料ダウンロード →</a>
+                </div>
+
+                <div class="service-card">
+                    <h3>営業代行サービス</h3>
+                    <p>ドローンビジネスに特化した営業代行サービス。<br>
+                    豊富な経験と専門知識を活かしたサポートを提供します。<br>
+                    お客様のビジネスの成長と発展に貢献します。<br>
+                    効果的な市場開拓と販路拡大を実現します。</p>
+                    <a href="mailto:irisadrone@gmail.com" class="service-link" target="_blank">営業代行を依頼の方はこちら →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // AOS縺ｮ蛻晄悄蛹・
+        AOS.init();
+
+        // 繧ｹ繧ｯ繝ｭ繝ｼ繝ｫ繧､繝吶Φ繝医・蜃ｦ逅・
+        window.addEventListener("scroll", () => {
+            const header = document.querySelector("header");
+            if (window.scrollY > 100) {
+                header.style.background = "rgba(0, 0, 0, 0.9)";
+            } else {
+                header.style.background = "rgba(0, 0, 0, 0.7)";
+            }
+        });
+    </script>
+</body>
+</html> 

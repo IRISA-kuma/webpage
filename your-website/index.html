@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRISA Drone Solutions</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">IRISA</div>
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="nav-links">
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#services">SERVICES</a>
+            <a href="#contact">CONTACT</a>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>IRISA</h1>
+            <p class="tagline">DRONE SOLUTIONS</p>
+            <p>ドローンソリューョンで、ビジネスの可能性を広げる</p>
+        </div>
+    </section>
+
+    <section id="services" class="section">
+        <div class="section-content">
+            <h2 class="section-title">SERVICES</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-image-container">
+                            <img src="images/drone.jpg" alt="ドローン点検" class="service-image">
+                            <div class="image-overlay"></div>
+                        </div>
+                        <h3>BridgeInspect</h3>
+                    </div>
+                    <p>ドローンを活用した革新的な橋梁点検ソリューション。<br>
+                    完全自動で橋全体を撮影し、高精度3Dモデルを作成します。<br>
+                    AIが「ひび割れ」「さび」を自動でリストアップします。<br>
+                    3DモデルからCADデータを作成し、作業を効率化します。</p>
+                    <a href="download.html" class="service-link">資料ダウンロード →</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-image-container">
+                            <img src="images/営業画像.jpg" alt="営業代行サービス" class="service-image">
+                            <div class="image-overlay"></div>
+                        </div>
+                        <h3>営業代行サービス</h3>
+                    </div>
+                    <p>ドローンビジネスに特化した営業代行サービス。<br>
+                    豊富な経験と専門知識を活かしたサポートを提供します。<br>
+                    お客様のビジネスの成長と発展に貢献します。<br>
+                    効果的な市場開拓と販路拡大を実現します。</p>
+                    <a href="eigyou.html" class="service-link">営業代行を依頼の方はこちら →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="section-content">
+            <h2 class="section-title" data-aos="fade-up">ABOUT</h2>
+            <div class="about-content">
+                <div class="about-text company-info" data-aos="fade-up">
+                    <h3>会社概要</h3>
+                    <table class="company-info-table">
+                        <tr>
+                            <th>会社名</th>
+                            <td>IRISA（イリサ）</td>
+                        </tr>
+                        <tr>
+                            <th>代表者</th>
+                            <td>
+                                代表取締役 福塚 大和
+                                <div class="ceo-image-container">
+                                    <img src="images/ceo.png" alt="代表取締役 福塚 大和" class="ceo-image" style="display: block; width: 200px; height: auto; margin-top: 15px;">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>設立</th>
+                            <td>2024年8月</td>
+                        </tr>
+                        <tr>
+                            <th>資本金</th>
+                            <td>520万円</td>
+                        </tr>
+                        <tr>
+                            <th>従業員数</th>
+                            <td>3名（2024年11月現在）</td>
+                        </tr>
+                        <tr>
+                            <th>事業内容</th>
+                            <td>
+                                1. ドローン橋梁点検ソリューション<br>
+                                2. 営業代行事業
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>所在地</th>
+                            <td>〒860-0802<br>熊本県熊本市中央区中央街4-22<br>アルバ銀座通りビル6F</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="section-content">
+            <h2 class="section-title">CONTACT</h2>
+            <div class="contact-button-container">
+                <a href="contact.html" class="contact-button">
+                    <span>お問い合わせ</span>
+                    <div class="button-effect"></div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        AOS.init();
+
+        // スクロール時のヘッダー背景変更
+        window.addEventListener("scroll", () => {
+            const header = document.querySelector("header");
+            header.style.background = window.scrollY > 100 
+                ? "rgba(0, 0, 0, 0.9)" 
+                : "rgba(0, 0, 0, 0.7)";
+        });
+    </script>
+
+    <!-- フッターを追加 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>IRISA</h3>
+                <p>〒860-0802</p>
+                <p>熊本県熊本市中央区中央街4-22</p>
+                <p>アルバ銀座通りビル6F</p>
+                <p>irisadrone@gmail.com</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Service</h3>
+                <ul>
+                    <li><a href="#home">ホーム</a></li>
+                    <li><a href="#services">サービス一覧</a></li>
+                    <li><a href="#about">会社概要</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Information</h3>
+                <ul>
+                  <li><a href="contact.html">お問い合わせ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 IRISA Inc. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+

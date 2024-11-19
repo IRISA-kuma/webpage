@@ -1,0 +1,339 @@
+.download-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #242424;
+    color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.download-form {
+    margin-top: 30px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #e0e0e0;
+}
+
+.required {
+    color: #ff4757;
+    margin-left: 4px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #404040;
+    border-radius: 6px;
+    background-color: #333333;
+    color: #ffffff;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    background-color: #404040;
+    border-color: #3498db;
+    outline: none;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #808080;
+}
+
+.download-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.download-button:hover {
+    background-color: #0056b3;
+}
+
+.submit-group {
+    text-align: center;
+}
+
+.submit-btn {
+    background-color: #3498db;
+    color: white;
+    padding: 15px 60px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #2980b9;
+}
+
+.download-page {
+    background-color: #1a1a1a;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+h2 {
+    color: #3498db;
+    margin-bottom: 40px;
+    font-size: 24px;
+}
+
+.contact-page {
+    background-color: #1a1a1a;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.contact-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #242424;
+    color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container h1 {
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-size: 32px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #e0e0e0;
+}
+
+.required {
+    color: #ff4757;
+    margin-left: 4px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #404040;
+    border-radius: 6px;
+    background-color: #333333;
+    color: #ffffff;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    background-color: #404040;
+    border-color: #00ff88;
+    outline: none;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #808080;
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.submit-btn {
+    background-color: #00ff88;
+    color: #1a1a1a;
+    padding: 15px 60px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #00cc6a;
+}
+
+.submit-group {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer {
+    background-color: #1a1a1a;
+    padding: 60px 0 20px;
+    color: #fff;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-section {
+    margin-left: 100px;
+}
+
+.footer-section:first-child {
+    margin-left: 200px;
+}
+
+.footer-section h3 {
+    color: #00ff88;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.footer-section p {
+    color: #999;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: #999;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 40px auto 0;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom p {
+    color: #666;
+    font-size: 12px;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-section {
+        margin-bottom: 30px;
+    }
+}
+
+.thank-you-message {
+    text-align: center;
+    padding: 60px 20px;
+    background: #1a1a1a !important;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.message-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.message-content p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.thank-you-message .message-content .primary-btn {
+    display: inline-block !important;
+    padding: 18px 60px !important;
+    background: transparent !important;
+    color: #00ff88 !important;
+    text-decoration: none !important;
+    font-size: 18px !important;
+    font-weight: bold !important;
+    letter-spacing: 3px !important;
+    border: 2px solid #00ff88 !important;
+    border-radius: 30px !important;
+    transition: all 0.3s ease !important;
+}
+
+.thank-you-message .message-content .primary-btn:hover {
+    background: #00ff88 !important;
+    color: #000 !important;
+    transform: translateY(-3px) !important;
+    box-shadow: 0 0 15px rgba(0, 255, 136, 0.3) !important;
+}
+
+form .submit-btn {
+    font-weight: bold !important;
+}
+
+#about .about-text.company-info {
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    background-color: rgba(26,26,26,0.9) !important;
+    padding: 60px !important;
+    border-radius: 10px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    position: relative !important;
+    z-index: 1 !important;
+}
+
+#about .about-content {
+    max-width: 1000px !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+    padding: 0 20px !important;
+    position: relative !important;
+    z-index: 1 !important;
+} 

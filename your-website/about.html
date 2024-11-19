@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT - IRISA Drone Solutions</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            line-height: 1.6;
+            color: #fff;
+            background-color: #0a0a0a;
+        }
+
+        .section {
+            min-height: 100vh;
+            padding: 100px 20px;
+        }
+
+        .section-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 48px;
+            color: #00ff88;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        /* ABOUTページ用のスタイル */
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+            background: rgba(26,26,26,0.8);
+            border-radius: 15px;
+            border: 1px solid rgba(0,255,136,0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        .about-content h3 {
+            color: #00ff88;
+            font-size: 24px;
+            margin: 30px 0 15px;
+        }
+
+        .about-content h3:first-child {
+            margin-top: 0;
+        }
+
+        .about-content p {
+            margin-bottom: 20px;
+            line-height: 1.8;
+            opacity: 0.9;
+        }
+
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            transition: background 0.3s;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #00ff88;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 40px;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            padding: 8px 16px;
+            border-radius: 3px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #00ff88;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">IRISA</div>
+            <div class="nav-links">
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="services.html">SERVICES</a>
+                <a href="index.html#contact">CONTACT</a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="about" class="section">
+        <div class="section-content">
+            <h2 class="section-title">ABOUT</h2>
+            <div class="about-content">
+                <h3>会社概要</h3>
+                <table class="company-info">
+                    <tr>
+                        <th>会社名</th>
+                        <td>IRISA（イリサ）</td>
+                    </tr>
+                    <tr>
+                        <th>代表者</th>
+                        <td>代表取締役 山田 太郎</td>
+                    </tr>
+                    <tr>
+                        <th>設立</th>
+                        <td>2023年4月</td>
+                    </tr>
+                    <tr>
+                        <th>資本金</th>
+                        <td>300万円</td>
+                    </tr>
+                    <tr>
+                        <th>従業員数</th>
+                        <td>5名（2024年4月現在）</td>
+                    </tr>
+                    <tr>
+                        <th>事業内容</th>
+                        <td>
+                            ・ドローンを活用した橋梁点検サービス<br>
+                            ・ドローンビジネスの営業支援サービス<br>
+                            ・ドローン関連コンサルティング
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>所在地</th>
+                        <td>〒000-0000<br>東京都渋谷区○○1-2-3</td>
+                    </tr>
+                </table>
+
+                <h3>企業理念</h3>
+                <p>「ドローンテクノロジーで社会課題を解決する」という理念のもと、
+                革新的なソリューションを提供し、持続可能な社会の実現に貢献します。</p>
+                
+                <h3>ビジョン</h3>
+                <p>最新のドローン技術を活用し、インフラ点検や産業用途における
+                効率化・省力化を実現。安全で効率的な社会インフラの維持に貢献します。</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        AOS.init();
+
+        // セッションストレージをクリア（テスト用）
+        // sessionStorage.clear();
+
+        // 現在のページがHOMEかどうかを確認
+        const isHome = location.pathname.endsWith('index.html') || location.pathname.endsWith('/');
+        
+        if (isHome) {
+            // HOMEページの場合の処理
+            const hasVisitedHome = sessionStorage.getItem('visitedHome');
+            
+            if (!hasVisitedHome) {
+                // 初回HOME訪問時の処理
+                const loader = document.querySelector('.loader-wrapper');
+                loader.style.display = 'flex';
+                
+                window.addEventListener('load', () => {
+                    setTimeout(() => {
+                        loader.classList.add('fade-out');
+                        sessionStorage.setItem('visitedHome', 'true');
+                    }, 2600);
+                });
+            } else {
+                // HOME再訪問時の処理
+                const loader = document.querySelector('.loader-wrapper');
+                loader.style.display = 'none';
+                document.querySelector('.content-wrapper').style.opacity = '1';
+            }
+        } else {
+            // HOME以外のページの処理
+            const loader = document.querySelector('.loader-wrapper');
+            loader.style.display = 'none';
+            document.querySelector('.content-wrapper').style.opacity = '1';
+        }
+
+        // ズーム比率を設定
+        window.addEventListener('load', () => {
+            document.body.style.zoom = "100%";
+            document.body.style.webkitTransform = "scale(1)";
+            document.body.style.transform = "scale(1)";
+        });
+
+        // スクロールイベントの処理
+        window.addEventListener("scroll", () => {
+            const header = document.querySelector("header");
+            if (window.scrollY > 100) {
+                header.style.background = "rgba(0, 0, 0, 0.9)";
+            } else {
+                header.style.background = "rgba(0, 0, 0, 0.7)";
+            }
+        });
+    </script>
+</body>
+</html>
